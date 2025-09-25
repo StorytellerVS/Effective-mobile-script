@@ -1,0 +1,11 @@
+[Unit]
+Description=Run monitor script every minute
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=1min
+AccuracySec=1s
+Unit=monitor.service
+
+[Install]
+WantedBy=timers.target
