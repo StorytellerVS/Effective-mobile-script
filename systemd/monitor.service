@@ -1,0 +1,6 @@
+[Unit]
+Description=Monitor process and restart if not running
+
+[Service]
+Type=oneshot
+ExecStart=/bin/bash /opt/scripts/monitor.sh
